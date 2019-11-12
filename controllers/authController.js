@@ -128,27 +128,6 @@ module.exports = {
         })
     }, 
 
-    getTahun1: (req, res) => {
-        db.query(`select * from list where tahun 2017`, (err, result) => {
-            if(err) throw err
-            res.send(result)
-        })
-    },
-
-    getTahun2: (req, res) => {
-        db.query(`select * from list where tahun 2018`, (err, result) => {
-            if(err) throw err
-            res.send(result)
-        })
-    },
-
-    getTahun3: (req, res) => {
-        db.query(`select * from list where tahun 2019`, (err, result) => {
-            if(err) throw err
-            res.send(result)
-        })
-    }
-
 
  }
 

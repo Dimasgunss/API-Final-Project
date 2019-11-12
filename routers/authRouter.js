@@ -16,8 +16,5 @@ router.post('/deletecartsproduct', authController.deleteCartsProduct)
 router.get('/searchproduct', authController.searchProduct)
 router.post('/inputtrans', authController.inputSubs)
 router.post('/uploadimage', upload.single('browse_file'), authController.inputSubs)
-router.get('/gettahun1', authController.getTahun1)
-router.get('/gettahun2', authController.getTahun2)
-router.get('/gettahun3', authController.getTahun3)
 
 module.exports = router
