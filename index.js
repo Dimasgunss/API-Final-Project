@@ -15,7 +15,7 @@ const db = mysql.createConnection({
     database: 'project_akhir'
 })
 
-app.use(bodyParser())
+app.use(bodyParser.json())
 app.use(cors())
 app.use('/files', express.static('uploadImage'))
 
